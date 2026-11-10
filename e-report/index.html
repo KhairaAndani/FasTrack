@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FasTrack | Laporan Fasilitas Sekolah</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <img src="assets/logo-fastrack.png" alt="FasTrack Logo">
+        </a>
+
+        <div class="nav-menu">
+            <a href="index.html" class="active">Beranda</a>
+            <a href="#form-laporan">Buat Laporan</a>
+            <a href="dashboard.html">Dashboard</a>
+        </div>
+
+        <a href="#form-laporan" class="nav-button">
+            Laporkan
+            <i class="fa-solid fa-paper-plane"></i>
+        </a>
+
+    </nav>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero-new">
+
+            <div class="hero-content">
+
+                <p class="small-title">
+                    SCHOOL FACILITY REPORTING SYSTEM
+                </p>
+
+                <h1>
+                    Laporkan kerusakan,<br>
+                    <span class="highlight-text">jaga</span> fasilitas sekolah.
+                </h1>
+
+                <p class="hero-description">
+                    Ada fasilitas sekolah yang rusak?
+                    Yuk, laporkan melalui <strong>FasTrack</strong>
+                    agar bisa segera diperiksa dan diperbaiki.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#form-laporan" class="main-button">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Buat Laporan
+                    </a>
+
+                    <a href="dashboard.html" class="second-button">
+                        <i class="fa-solid fa-table-columns"></i>
+                        Lihat Dashboard
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD RINGKASAN LAPORAN -->
+            <div class="facility-card">
+
+                <div class="facility-card-top">
+                    <div>
+                        <span class="facility-card-label">FACILITY REPORT</span>
+                        <h3>Ringkasan Laporan</h3>
+                    </div>
+
+                    <div class="facility-card-icon">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                    </div>
+                </div>
+
+                <p class="facility-card-desc">
+                    Pantau kondisi laporan fasilitas sekolah.
+                </p>
+
+
+                <!-- STATISTIK -->
+                <div class="facility-card-stats">
+
+                    <div class="facility-stat">
+                        <span class="facility-stat-head">Total Laporan</span>
+                        <strong class="facility-stat-number">05</strong>
+                        <span class="facility-stat-note">Seluruh laporan masuk</span>
+                    </div>
+
+                    <div class="facility-stat">
+                        <span class="facility-stat-head">Menunggu</span>
+                        <strong class="facility-stat-number">02</strong>
+                        <span class="facility-stat-note">Perlu diperiksa</span>
+                    </div>
+
+                </div>
+
+
+                <!-- LAPORAN TERBARU -->
+                <div class="facility-recent">
+
+                    <div class="facility-recent-heading">
+                        <h4>Laporan Terbaru</h4>
+                        <span>2 laporan</span>
+                    </div>
+
+                    <div class="facility-report">
+
+                        <div class="facility-report-icon">
+                            <i class="fa-solid fa-snowflake"></i>
+                        </div>
+
+                        <div class="facility-report-info">
+                            <strong>AC Lab Komputer</strong>
+                            <span>Kerusakan elektronik</span>
+                        </div>
+
+                        <span class="facility-status waiting">
+                            Menunggu
+                        </span>
+
+                    </div>
+
+                    <div class="facility-report">
+
+                        <div class="facility-report-icon">
+                            <i class="fa-solid fa-chair"></i>
+                        </div>
+
+                        <div class="facility-report-info">
+                            <strong>Kursi Ruang Kelas</strong>
+                            <span>Kerusakan furniture</span>
+                        </div>
+
+                        <span class="facility-status completed">
+                            Selesai
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <a href="dashboard.html" class="facility-card-link">
+                    <span>Lihat semua laporan</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- REPORT & CONTACT SECTION -->
+<section class="contact-report-section" id="form-laporan">
+
+    <div class="contact-report-container">
+
+        <!-- BAGIAN ATAS -->
+        <div class="contact-report-header">
+
+            <span class="contact-label">FASTRACK • SCHOOL FACILITY</span>
+
+            <h2>
+                Ada fasilitas yang<br>
+                perlu diperbaiki?
+            </h2>
+
+            <p>
+                Bantu kami menjaga lingkungan sekolah dengan
+                melaporkan fasilitas yang membutuhkan perhatian.
+            </p>
+
+            <div class="contact-info-grid">
+
+                <div class="contact-info-item">
+                    <span class="contact-info-icon">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </span>
+
+                    <div>
+                        <h3>Isi Laporan</h3>
+                        <p>Ceritakan fasilitas yang mengalami kerusakan.</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <span class="contact-info-icon">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </span>
+
+                    <div>
+                        <h3>Pemeriksaan</h3>
+                        <p>Laporan akan diperiksa oleh petugas.</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <span class="contact-info-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </span>
+
+                    <div>
+                        <h3>Tindak Lanjut</h3>
+                        <p>Kerusakan ditangani sesuai kondisi fasilitas.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BAGIAN FORM DAN FOTO -->
+        <div class="contact-report-content">
+
+            <div class="contact-form-area">
+
+                <span class="contact-label">Laporkan Sekarang!</span>
+
+                <h2>Buat Laporan</h2>
+
+                <p class="contact-form-desc">
+                    Sampaikan informasi kerusakan fasilitas
+                    sekolah melalui formulir berikut.
+                </p>
+
+                <form class="contact-form">
+
+                    <div class="contact-input-group">
+
+                        <label for="nama">Nama Pelapor</label>
+
+                        <input
+                            type="text"
+                            id="nama"
+                            placeholder="Masukkan nama lengkap"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="contact-input-group">
+
+                        <label for="kelas">Kelas / Jabatan</label>
+
+                        <input
+                            type="text"
+                            id="kelas"
+                            placeholder="Contoh: X RPL 1"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="contact-input-group">
+
+                        <label for="lokasi">Lokasi Fasilitas</label>
+
+                        <input
+                            type="text"
+                            id="lokasi"
+                            placeholder="Contoh: Lab Komputer 2"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="contact-input-group">
+
+                        <label for="kategori">Kategori Kerusakan</label>
+
+                        <select id="kategori" required>
+
+                            <option value="">Pilih kategori</option>
+                            <option>Elektronik</option>
+                            <option>Furniture</option>
+                            <option>Fasilitas Kelas</option>
+                            <option>Toilet</option>
+                            <option>Lainnya</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="contact-input-group">
+
+                        <label for="deskripsi">Deskripsi Kerusakan</label>
+
+                        <textarea
+                            id="deskripsi"
+                            rows="4"
+                            placeholder="Jelaskan kondisi fasilitas yang rusak..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="contact-input-group">
+
+                        <label for="foto">Foto Pendukung (Opsional)</label>
+
+                        <input
+                            type="file"
+                            id="foto"
+                            accept="image/*"
+                        >
+
+                    </div>
+
+
+                    <button type="submit" class="contact-submit">
+                        Kirim Laporan
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- FOTO SISI KANAN -->
+            <div class="contact-image-area">
+
+                <img
+                    src="assets/foto-belajar-idn.jpeg"
+                    alt="Kegiatan belajar di IDN"
+                >
+
+                <div class="contact-image-caption">
+                    <span>LEARNING - CREATING - IMPROVING</span>
+                    <h3>
+                        Peduli lingkungan,<br>
+                        mulai dari sekolah.
+                    </h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- SECTION PENUTUP -->
+        <section class="closing-section">
+
+            <div class="closing-content">
+
+                <p class="closing-label">
+                    FASTRACK • SCHOOL FACILITY REPORTING
+                </p>
+
+                <h2>
+                    Sekolah yang nyaman,<br>
+                    dimulai dari <span>kepedulian.</span>
+                </h2>
+
+                <p>
+                    Temukan fasilitas yang perlu diperbaiki?
+                    Jangan ragu untuk melaporkannya.
+                    Setiap laporan membantu menjaga lingkungan sekolah.
+                </p>
+
+                <a href="#form-laporan" class="closing-button">
+                    Laporkan Kerusakan
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="closing-side">
+
+    <img src="assets/logo-fastrack.png" alt="FasTrack Logo">
+
+    <span>Mulai dari hal kecil.</span>
+
+    <strong>Berikan perubahan untuk sekolah.</strong>
+
+</div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+       <div class="footer-brand">
+
+    <img src="assets/logo-fastrack.png" alt="FasTrack Logo">
+
+    <span>Sistem Laporan Fasilitas Sekolah</span>
+
+</div>
+
+        <p>
+            © 2026 FasTrack. All rights reserved.
+        </p>
+
+    </footer>
+
+ <!-- JS -->
+  <script src="js/data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

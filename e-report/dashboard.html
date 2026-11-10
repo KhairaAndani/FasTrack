@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FasTrack | Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">F</span>
+            FasTrack
+        </a>
+
+        <div class="nav-menu">
+            <a href="index.html">Beranda</a>
+            <a href="index.html#form-laporan">Buat Laporan</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
+        </div>
+
+        <a href="index.html#form-laporan" class="nav-button">
+            + Laporan Baru
+        </a>
+    </nav>
+
+
+    <main class="dashboard-page">
+
+        <!-- Judul Dashboard -->
+        <section class="dashboard-heading">
+            <div>
+                <p class="small-title">RINGKASAN DATA</p>
+                <h1>Dashboard <span>Laporan.</span></h1>
+                <p>Pantau laporan kerusakan fasilitas sekolah dalam satu halaman.</p>
+            </div>
+
+            <div class="date-label">
+                <span class="date-dot"></span>
+                DATA LAPORAN SEKOLAH
+            </div>
+        </section>
+
+
+        <!-- Statistik -->
+        <section class="stats">
+
+            <div class="stat-card total-card">
+                <div class="stat-top">
+                    <p>Total Laporan</p>
+                    <span class="stat-icon">01</span>
+                </div>
+                <h2>03</h2>
+                <p class="stat-description">Seluruh laporan masuk</p>
+            </div>
+
+            <div class="stat-card waiting-card">
+                <div class="stat-top">
+                    <p>Menunggu Proses</p>
+                    <span class="stat-icon">02</span>
+                </div>
+                <h2>01</h2>
+                <p class="stat-description">Perlu ditindaklanjuti</p>
+            </div>
+
+            <div class="stat-card done-card">
+                <div class="stat-top">
+                    <p>Laporan Selesai</p>
+                    <span class="stat-icon">03</span>
+                </div>
+                <h2>02</h2>
+                <p class="stat-description">Sudah ditangani</p>
+            </div>
+
+        </section>
+
+
+        <!-- Daftar Laporan -->
+        <section class="report-list">
+
+            <div class="list-heading">
+                <div>
+                    <p class="small-title">DATA FASILITAS</p>
+                    <h2>Daftar Laporan</h2>
+                </div>
+
+                <span class="total-label">03 Laporan</span>
+            </div>
+
+
+            <!-- Filter -->
+            <div class="filter-menu">
+                <a href="#" class="filter-active">
+                    Semua <span>3</span>
+                </a>
+
+                <a href="#">
+                    Menunggu <span>1</span>
+                </a>
+
+                <a href="#">
+                    Selesai <span>2</span>
+                </a>
+            </div>
+
+
+            <!-- Tabel -->
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pelapor</th>
+                            <th>Kategori</th>
+                            <th>Deskripsi</th>
+                            <th>Status</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="reports-tabel-body">
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="dashboard-footer">
+            <p>FASTRACK / FACILITY MANAGEMENT</p>
+            <p>Data laporan fasilitas sekolah</p>
+        </footer>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
